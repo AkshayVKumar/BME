@@ -1,0 +1,94 @@
+{% extends "student_base.html" %}
+{% load static %}
+
+{% block content %}
+  <div class="jumbotron">
+    <br>
+    <center><u><h1 class="wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">Services That We Offer</h1></u></center>
+  </div>
+  <div class="row">
+
+    <!--Grid column-->
+    <div class="col-md-4">
+
+      <!--Blue select-->
+      <div class="select-wrapper mdb-select colorful-select dropdown-info md-form my-0 mx-2 md-selected"><span class="caret">▼</span><input type="text" class="select-dropdown form-control" readonly="true" required="false" data-activates="select-options-top" value="" role="listbox" aria-multiselectable="false" aria-disabled="false" aria-required="false" aria-haspopup="true" aria-expanded="false"><ul id="select-options-top" class="dropdown-content select-dropdown w-100 " style="display: none;"><li class="disabled  " role="option" aria-selected="false" aria-disabled="true"><span class="filtrable "> Date    </span></li><li class="  " role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> Today    </span></li><li class="  " role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> Week    </span></li><li class="  " role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> Month    </span></li><li class="  " role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> Year    </span></li><li class=" active " role="option" aria-selected="true" aria-disabled="false"><span class="filtrable "> All    </span></li></ul><select id="top" class="mdb-select colorful-select dropdown-info md-form my-0 mx-2 md-selected initialized">
+        <option value="" disabled="">Date</option>
+        <option value="day">Today</option>
+        <option value="week">Week</option>
+        <option value="month">Month</option>
+        <option value="year">Year</option>
+        <option value="all" selected="">All</option>
+      </select></div>
+      <!--/Blue select-->
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-4">
+
+      <!--Blue select-->
+      <div class="select-wrapper mdb-select colorful-select dropdown-info md-form my-0 mx-2 md-selected"><span class="caret">▼</span><input type="text" class="select-dropdown form-control" readonly="true" required="false" data-activates="select-options-category" value="" role="listbox" aria-multiselectable="false" aria-disabled="false" aria-required="false" aria-haspopup="true" aria-expanded="false"><ul id="select-options-category" class="dropdown-content select-dropdown w-100 " style="display: none; max-height: 180px;"><li class="disabled  " role="option" aria-selected="false" aria-disabled="true"><span class="filtrable "> Choose Category    </span></li><li class=" active " role="option" aria-selected="true" aria-disabled="false"><span class="filtrable "> Show All categories    </span></li><li class="  " role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> MDB jQuery (default Bootstrap)    </span></li><li class="  " role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> MDB Angular    </span></li><li class="  " role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> MDB React    </span></li><li class="  " role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> MDB Vue    </span></li><li class="  " role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> MDB 5    </span></li></ul><select id="category" class="mdb-select colorful-select dropdown-info md-form my-0 mx-2 md-selected initialized">
+        <option value="" disabled="">Choose Category</option>
+        <option value="" data-url="/snippets/" selected="">Show All categories</option>
+        <option value="jquery" data-url="/snippets/cat/jquery">MDB jQuery (default Bootstrap)</option>
+        <option value="angular" data-url="/snippets/cat/angular">MDB Angular</option>
+        <option value="react" data-url="/snippets/cat/react">MDB React</option>
+        <option value="vue" data-url="/snippets/cat/vue">MDB Vue</option>
+        <option value="standard" data-url="/snippets/cat/standard">MDB 5</option>
+      </select></div>
+      <!--/Blue select-->
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-4">
+
+      <!--Blue select-->
+      <div class="select-wrapper mdb-select colorful-select dropdown-info md-form my-0 mx-2 md-selected"><span class="caret">▼</span><input type="text" class="select-dropdown form-control" readonly="true" required="false" data-activates="select-options-sortby" value="" role="listbox" aria-multiselectable="false" aria-disabled="false" aria-required="false" aria-haspopup="true" aria-expanded="false"><ul id="select-options-sortby" class="dropdown-content select-dropdown w-100 " style="display: none;"><li class="disabled  " role="option" aria-selected="false" aria-disabled="true"><span class="filtrable "> Sort by    </span></li><li class=" active " role="option" aria-selected="true" aria-disabled="false"><span class="filtrable "> Upvotes    </span></li><li class="  " role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> Date    </span></li><li class="  " role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> Views    </span></li></ul><select id="sortby" class="mdb-select colorful-select dropdown-info md-form my-0 mx-2 md-selected initialized">
+        <option value="" disabled="">Sort by</option>
+        <option value="likes" selected="">Upvotes</option>
+        <option value="date">Date</option>
+        <option value="views">Views</option>
+      </select></div>
+      <!--/Blue select-->
+
+    </div>
+    <!--Grid column-->
+
+  </div>
+<div class="container" style="padding: 25px 50px 75px 100px;">
+    <center><h5><span>We provide excellent enterprise solutions, as one window consulting through IT Transformations / Digitalization / Business Process Management / Product Development and skill development emphasised on quality and cost effective services</span></h5></center>
+                
+</div>
+<div style="text-align: justify;">
+<div class="card-group">
+    <div class="card">
+      <img src="{% static 'home/images/testimonial-3.jpg' %}" class="card-img-top" alt="..." width="70px" height="30%">
+      <div class="card-body">
+        <h5 class="card-title" style="text-align: center;">College Admissions</h5>
+        <p class="card-text">CARD1: This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static 'home/images/testimonial-1.jpg' %}" class="card-img-top" alt="..." width="70px" height="30%">
+      <div class="card-body">
+        <h5 class="card-title" style="text-align: center;">Student care</h5>
+        <p class="card-text">CARD 2:This card has supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static 'home/images/testimonial-2.jpg' %}" class="card-img-top" alt="..." width="70px" height="30%">
+      <div class="card-body">
+        <h5 class="card-title" style="text-align: center;">Cost effectiive seats</h5>
+        <p class="card-text">CARD 3: This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

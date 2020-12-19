@@ -1,0 +1,69 @@
+  <!--==========================
+    Header
+  ============================-->
+  {% load static %}
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- <h1 style="font-size: 30px; font-weight: 60px"><a href="{% url 'students:index' %}" class="scrollto">Book<span>My</span><span>Edu</span></a></h1>
+        Uncomment below if you prefer to use an image logo -->
+        <a href="{% url 'students:index' %}"><img src="{% static 'home/images/bme_logo.png' %}" height="65" alt="" title="" /></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+            {% if request.path == "/" %}
+            <li class="menu-active"><a href="{% url 'students:index' %}">Home</a></li>
+            {% else %}
+            <li><a href="{% url 'students:index' %}">Home</a></li>
+            {% endif %}
+            
+            {% if "about" in request.path %}
+            <li class="menu-active"><a href="{% url 'students:about' %}">About Us</a></li>
+            {% else %}
+            <li><a href="{% url 'students:about' %}">About Us</a></li>
+            {% endif %}
+            {% if "services" in request.path %}
+            <li class="menu-active"><a href="{% url 'students:services' %}">Services</a></li>
+            {% else %}
+            <li><a href="{% url 'students:services' %}">Services</a></li>
+            {% endif %}
+        
+          <li class="menu-has-children"><a href="{% url 'students:colleges' %}">Colleges</a>
+            <ul>
+              <li class="menu-has-children"><a href="#">Karnataka</a>
+                <ul>
+                  <li><a href="#">AMC Engineering  College </a></li>
+                  <li><a href="#">BNMIT</a></li>
+                  <li><a href="#">Adichunchungiri College of engineering</a></li>
+                  <li><a href="#">SJCIT</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="#">Andrapradesh</a>
+                <ul>
+                  <li><a href="#">AMC Engineering  College </a></li>
+                  <li><a href="#">BNMIT</a></li>
+                  <li><a href="#">Adichunchungiri College of engineering</a></li>
+                  <li><a href="#">SJCIT</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+          {% if "contact" in request.path  %}
+          <li class="menu-active"><a href="{% url 'students:contactus' %}">Contact</a></li>
+          {% else %}
+          <li><a href="{% url 'students:contactus' %}">Contact</a></li>
+          {% endif %}
+        
+        <li>
+          <form class="d-flex" method="GET">
+            <input class="form-control me-2" type="search" placeholder="College Name" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </li>
+      </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->

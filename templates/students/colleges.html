@@ -1,0 +1,174 @@
+{% extends "student_base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <br>
+    <center><u><h1 class="wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">Colleges we work with</h1></u></center>
+  </div>
+
+
+  <!-- Search bar-->
+
+<div class="container" style="padding: 25px 50px 75px 100px; border: 2px solid black; padding-bottom: 30px">
+  <center><u><h3 class="wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">Search Colleges</h3></u></center>
+  <hr>
+  <form method="get">
+    <div class="col-sm-12">
+      <div class="row">
+    <div class="col-sm-4" >
+      <label for="course">Search by course</label>
+       <select name="state" class="form-control" id="course" style="width: 200px; min-width: 200px; background-color: lightgrey;">
+         <option value="be">B.E.</option>
+         <option value="mtech">M.Tech</option>
+       </select>
+    </div>
+    <div class="col-sm-4">
+      <label for="state">Search by State</label>
+      <select name="state" class="form-control" id="state" style="width: 200px; min-width: 200px; background-color: lightgrey;">
+        <option value="Karnataka">Karnataka</option>
+        <option value="Andhra Pradesh"> Andhra Pradesh</option>
+      </select>
+   </div>
+   <div class="col-sm-4">
+    <label for="place">Search by place</label>
+    <select name="state" class="form-control" id="place" style="width: 200px; min-width: 200px; background-color: lightgrey;">
+      <option value="Karnataka">Bangalore</option>
+      <option value="Andhra Pradesh"> Kodagu</option>
+    </select>
+ </div>
+
+</div>
+<br>
+
+<div class="row" >
+  <div class="col-sm-4"> </div>
+  <div class="col-sm-4">
+    <input type="submit" value="Search Colleges" class="btn btn-success" style="width: 200px; min-width: 200px;">
+  </div>
+  
+  
+
+</div>
+</div>
+  </form>
+
+</div>
+<div class="container">
+  <br>
+  <center><u><h3 class="wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">College Details</h3></u></center>
+  <hr>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+  
+
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 1</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 2</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 3</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+  
+    
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 4</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 5</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 6</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 7</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 8</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 9</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="d-flex justify-content-center">
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="false">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active" aria-current="page">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+
+
+
+
+{% endblock %}

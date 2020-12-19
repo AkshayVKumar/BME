@@ -1,0 +1,11 @@
+{% extends "student_base.html" %}
+{% load static %}
+
+
+{% block content %}
+{% include "partials/home/_carousel.html" %}
+{% include "partials/home/_asscoll.html" %} 
+{% include "partials/home/_home_about.html" %} 
+
+<a href="{% url 'students:contactus' %}"><center><img src="{% static 'home/images/contact_us.png' %}" alt="" width="200" height="100"></center></a>
+{% endblock %}

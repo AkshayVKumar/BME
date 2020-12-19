@@ -1,0 +1,48 @@
+  <!--==========================
+    Header
+  ============================-->
+  {% load static %}
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- <h1 style="font-size: 30px; font-weight: 60px"><a href="{% url 'students:index' %}" class="scrollto">Book<span>My</span><span>Edu</span></a></h1>
+        Uncomment below if you prefer to use an image logo -->
+        <a href="{% url 'students:index' %}"><img src="{% static 'home/images/bme_logo.png' %}" height="65" alt="" title="" /></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          {% if request.user %}
+          {% if request.path == "/" %}
+          <li class="menu-active"><a href="{% url 'index' %}">New Enquiry</a></li>
+          {% else %}
+          <li><a href="{% url 'index' %}">New Enquiry</a></li>
+          {% endif %}
+          
+          {% if "about" in request.path %}
+          <li class="menu-active"><a href="{% url 'check_add' %}">Check/Add Enquiry</a></li>
+          {% else %}
+          <li><a href="{% url 'check_add' %}">Check/Add Enquiry</a></li>
+          {% endif %}
+          {% if "services" in request.path %}
+          <li class="menu-active"><a href="{% url 'students:services' %}">My Enquries</a></li>
+          {% else %}
+          <li><a href="{% url 'students:services' %}">My Enquiries</a></li>
+          {% endif %}
+
+       
+        {% if "contact" in request.path  %}
+        <li class="menu-active"><a href="{% url 'students:contactus' %}">Enquiry Status</a></li>
+        {% else %}
+        <li><a href="{% url 'students:contactus' %}">Enquiry Status</a></li>
+        {% endif %}
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+          {% else %}
+          <li><a href="{% url 'login' %}">Login</a></li>
+          {% endif %}
+ 
+      </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
